@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISISS36ListInv",
+  "modelName": "i-i-s-i-s-s36-list-inv",
+  "className": "ListInv",
+  "nameSpace": "IIS.ISS36",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "investment",
+      "relatedTo": "i-i-s-i-s-s36-investment",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "support",
+      "relatedTo": "i-i-s-i-s-s36-support",
+      "inverse": "listInv"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ListInvE",
+      "modelName": "i-i-s-i-s-s36-list-inv",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Investment",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Investment",
+          "name": "investment",
+          "relatedTo": "i-i-s-i-s-s36-investment",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

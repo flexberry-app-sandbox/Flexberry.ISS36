@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISISS36Support",
+  "modelName": "i-i-s-i-s-s36-support",
+  "className": "Support",
+  "nameSpace": "IIS.ISS36",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "form",
+      "relatedTo": "i-i-s-i-s-s36-form",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "listInv",
+      "relatedTo": "i-i-s-i-s-s36-list-inv",
+      "inverse": "support"
+    }
+  ],
+  "projections": [
+    {
+      "name": "SupportE",
+      "modelName": "i-i-s-i-s-s36-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Form",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Form",
+          "name": "form",
+          "relatedTo": "i-i-s-i-s-s36-form",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ListInvE",
+          "caption": "List inv",
+          "name": "listInv",
+          "relatedTo": "i-i-s-i-s-s36-list-inv",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "SupportL",
+      "modelName": "i-i-s-i-s-s36-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Form",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "form",
+          "relatedTo": "i-i-s-i-s-s36-form",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

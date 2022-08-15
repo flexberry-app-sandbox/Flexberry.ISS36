@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Form",
+      "projection": "FormL",
+      "detailModelName": null
+    },
+    {
+      "master": "investment",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "ListInv.Investment",
+      "projection": "InvestmentL",
+      "detailModelName": "i-i-s-i-s-s36-list-inv"
+    }
+  ],
+  "external": false,
+  "caption": "Support",
+  "name": "IISISS36SupportE",
+  "className": "SupportE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s36-support",
+      "modelProjection": "SupportE"
+    }
+  ]
+}

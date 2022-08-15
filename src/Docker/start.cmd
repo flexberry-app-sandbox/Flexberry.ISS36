@@ -1,0 +1,1 @@
+docker-compose -p iss36 up -d

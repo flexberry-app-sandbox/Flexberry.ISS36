@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "I s s36",
+  "applicationTitle": "I s s36",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-s-s36",
+      "caption": "ISS36",
+      "title": "ISS36",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s36-form-l",
+          "menuName": null,
+          "caption": "Form",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s36-support-l",
+          "menuName": null,
+          "caption": "Support",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s36-investment-l",
+          "menuName": null,
+          "caption": "Investment",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
