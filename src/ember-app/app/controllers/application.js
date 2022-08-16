@@ -28,19 +28,19 @@ export default Controller.extend({
             link: 'i-i-s-i-s-s36-form-l',
             caption: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-form-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-form-l.title'),
-            icon: 'edit',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-i-s-s36-support-l',
             caption: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-support-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-support-l.title'),
-            icon: 'calendar',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-i-s-s36-investment-l',
             caption: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-investment-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s36.i-i-s-i-s-s36-investment-l.title'),
-            icon: 'phone',
+            icon: 'chart bar',
             children: null
           }]
         }
